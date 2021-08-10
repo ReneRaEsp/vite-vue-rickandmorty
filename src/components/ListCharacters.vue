@@ -1,5 +1,6 @@
 <template>
   <section class="listCharacters">
+      <FilterByStatus/>
       <div class="characters">
           <div
            v-for="character of characters" 
@@ -14,10 +15,11 @@
 <script>
 import {useStore} from 'vuex';
 import {onMounted, computed} from 'vue';
+import FilterByStatus from '../components/FilterByStatus.vue';
 import CardCharacter from '../components/CardCharacter.vue';
 export default {
     components:{
-        CardCharacter
+        CardCharacter, FilterByStatus
     },
     setup(){
         const store = useStore();

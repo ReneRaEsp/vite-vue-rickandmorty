@@ -38,5 +38,5 @@ export default{
       margin-bottom: 1rem
       border-radius: 1rem
       background: rgba(233, 233, 233, .82)
-      width: fit-content
+      width: 40%
 </style>
